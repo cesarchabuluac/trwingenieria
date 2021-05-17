@@ -1,7 +1,7 @@
 <?php
 
-    //$to = "trea@trwingenieria.com";
-    $to = "info@cesarchabuluac.com";
+    $to = "trea@trwingenieria.com";
+    //$to = "info@cesarchabuluac.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
