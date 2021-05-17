@@ -7,10 +7,8 @@
     <meta name="robots" content="index, follow">
     <meta name="GOOGLEBOT" content="NOODP">
     <meta name="googlebot" content="noodp">
-    <meta name="description"
-        content="Compañía dedicada a prestar servicios de obra civil, mecánica, eléctrica, así como servicio a ductos">
-    <meta name="keywords"
-        content="Obras, protección, catódica, mantenimiento, vías, correctivo, tuberías, bombas, compresores,motores,turninas, civil,mecánica, eléctrica, ductos, Tabasco, Tabasco, México, industriale, carreteras,remodelación, paneles solares">
+    <meta name="description" content="Compañía dedicada a prestar servicios de obra civil, mecánica, eléctrica, así como servicio a ductos">
+    <meta name="keywords" content="Obras, protección, catódica, mantenimiento, vías, correctivo, tuberías, bombas, compresores,motores,turninas, civil,mecánica, eléctrica, ductos, Tabasco, Tabasco, México, industriale, carreteras,remodelación, paneles solares">
     <meta name="copyright" content="TRW Ingeniería">
     <meta name="Distribution" content="Global">
     <meta name="Rating" content="General">
@@ -36,6 +34,50 @@
 </head>
 
 <body>
+    <?php
+    if (isset($_POST['submit'])) {
+        //$to = "trea@trwingenieria.com";
+        $to = "info@cesarchabuluac.com";
+        $from = $_REQUEST['email'];
+        $name = $_REQUEST['name'];
+        $subject = $_REQUEST['subject'];
+        $number = $_REQUEST['number'];
+        $cmessage = $_REQUEST['message'];
+
+        $headers = "From: $from";
+        $headers = "From: " . $from . "\r\n";
+        $headers .= "Reply-To: " . $from . "\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+        $subject = "Información de Contacto";
+
+        // $logo = 'img/logo.png';
+        // $link = '#';
+
+        $body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>TRW-Igenieria</title></head><body>";
+        $body .= "<table style='width: 100%;'>";
+        $body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
+        // $body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
+        $body .= "</td></tr></thead><tbody><tr>";
+        $body .= "<td style='border:none;'><strong>Nombre:</strong> {$name}</td>";
+        $body .= "<td style='border:none;'><strong>Correo:</strong> {$from}</td>";
+        $body .= "</tr>";
+        $body .= "<tr><td style='border:none;'><strong>Asunto:</strong> {$subject}</td></tr>";
+        $body .= "<tr><td></td></tr>";
+        $body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
+        $body .= "</tbody></table>";
+        $body .= "</body></html>";
+
+        if (mail($to, $subject, $body, $headers)) {
+    ?>
+            <script>
+                window.location.href = "/";
+            </script>
+    <?php
+        }
+    }
+    ?>
     <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -102,14 +144,14 @@
                                             <li><a href="about.html">Nosotros</a></li>
                                             <li><a href="project.html">Proyectos</a></li>
                                             <li><a href="services.html">Servicios</a></li>
-                                            <li><a href="contact.html">Contacto</a></li>
+                                            <li><a href="contact.php">Contacto</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div class="col-xl-2 col-lg-2 col-md-3">
                                 <div class="header-right-btn f-right d-none d-lg-block">
-                                    <a href="contact.html" class="btn">Contacta ahora</a>
+                                    <a href="contact.php" class="btn">Contacta ahora</a>
                                 </div>
                             </div>
                             <!-- Mobile Menu -->
@@ -125,8 +167,7 @@
     </header>
     <!-- slider Area Start-->
     <div class="slider-area ">
-        <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
-            data-background="assets/img/hero/about.jpg">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/about.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -148,9 +189,8 @@
     <!-- ================ contact section start ================= -->
     <section class="contact-section">
         <div class="container">
-            <div class="d-none d-sm-block mb-5 pb-4">                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15177.536696645657!2d-92.96642397955948!3d18.007366060077644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd7c1fdc52b57%3A0xaac7cf42f003181!2sLa%20Choca%2C%2086037%20Villahermosa%2C%20Tab.!5e0!3m2!1ses!2smx!4v1621278195435!5m2!1ses!2smx" 
-                 height="480" style="height: 480px; width: 100%; position: relative; overflow: hidden;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="d-none d-sm-block mb-5 pb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15177.536696645657!2d-92.96642397955948!3d18.007366060077644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd7c1fdc52b57%3A0xaac7cf42f003181!2sLa%20Choca%2C%2086037%20Villahermosa%2C%20Tab.!5e0!3m2!1ses!2smx!4v1621278195435!5m2!1ses!2smx" height="480" style="height: 480px; width: 100%; position: relative; overflow: hidden;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <div class="row">
@@ -158,40 +198,31 @@
                     <h2 class="contact-title">Ponerse en contacto</h2>
                 </div>
                 <div class="col-lg-8">
-                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
-                        novalidate="novalidate">
+                    <form class="form-contact contact_form" action="contact.php" method="POST" id="contactForm" novalidate="novalidate">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingrese el mensaje'"
-                                        placeholder=" Ingrese el mensaje"></textarea>
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingrese el mensaje'" placeholder=" Ingrese el mensaje"></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input class="form-control valid" name="name" id="name" type="text"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Introduzca su nombre'"
-                                        placeholder="Introduzca su nombre">
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Introduzca su nombre'" placeholder="Introduzca su nombre">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input class="form-control valid" name="email" id="email" type="email"
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Introduzca su correo electrónico'" placeholder="Introduzca su correo electrónico">
+                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Introduzca su correo electrónico'" placeholder="Introduzca su correo electrónico">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <input class="form-control" name="subject" id="subject" type="text"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingrese Asunto'"
-                                        placeholder="Ingrese Asunto">
+                                    <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingrese Asunto'" placeholder="Ingrese Asunto">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group mt-3">
-                            <button type="submit" class="button button-contactForm boxed-btn">Enviar</button>
+                            <input type="submit" id="submit" name="submit" value="Enviar" value="Enviar" class="button button-contactForm boxed-btn">
                         </div>
                     </form>
                 </div>
@@ -199,9 +230,9 @@
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
                         <div class="media-body">
-                            <h3>Fracc. Campestre<br> 
+                            <h3>Fracc. Campestre<br>
                                 Reforma 218<br>
-                                C.P 86037</h3>                            
+                                C.P 86037</h3>
                         </div>
                     </div>
                     <div class="media contact-info">
@@ -261,7 +292,7 @@
                                         <li><a href="about.html">Nosotros</a></li>
                                         <li><a href="services.html">Servicios</a></li>
                                         <li><a href="project.html">Proyectos</a></li>
-                                        <li><a href="contact.html">Contacta con nosotros</a></li>
+                                        <li><a href="contact.php">Contacta con nosotros</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -292,7 +323,9 @@
                                 <p>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                     Copyright &copy;
-                                    <script>document.write(new Date().getFullYear());</script> All rights reserved | Designed by
+                                    <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> All rights reserved | Designed by
                                     <a href="https://cesarchabuluac.com" target="_blank">Cesar Chab</a>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 </p>
