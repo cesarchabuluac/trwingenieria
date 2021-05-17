@@ -1,6 +1,7 @@
 <?php
 
-    $to = "trea@trwingenieria.com";
+    //$to = "trea@trwingenieria.com";
+    $to = "info@cesarchabuluac.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -32,6 +33,11 @@
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
 
-    $send = mail($to, $subject, $body, $headers);
+    mail($to, $subject, $body, $headers);
+    
 
 ?>
+
+<script>    
+    window.location.href = "/";
+</script>
