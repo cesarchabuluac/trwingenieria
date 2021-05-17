@@ -68,6 +68,7 @@ $(document).ready(function(){
                             $('.modal').modal('hide');
 		                	$('#success').modal('show');
                         })
+                        window.location.href = 'index.html';
                     },
                     error: function() {
                         $('#contactForm').fadeTo( "slow", 1, function() {

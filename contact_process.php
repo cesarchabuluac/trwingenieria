@@ -33,11 +33,7 @@
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
 
-    mail($to, $subject, $body, $headers);
+    $send = mail($to, $subject, $body, $headers);
     
 
 ?>
-
-<script>    
-    window.location.href = "/";
-</script>
