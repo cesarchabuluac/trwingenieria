@@ -121,9 +121,9 @@
         <!-- Header End -->
     </header>
     <!-- slider Area Start-->
-    <div class="slider-area ">
+    <div class="slider-area " style="background: rgba(25, 26, 51, 0.7);">
         <div class="single-slider hero-overly slider-height2 d-flex align-items-center"
-            data-background="assets/img/hero/about.jpg">
+            data-background="">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">

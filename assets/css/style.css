@@ -2324,6 +2324,7 @@ hr {
 .slider-area .hero__caption h1 {
     font-size: 140px;
     font-weight: 900;
+    font-style: italic;
     color: #ffffff;
     font-family: "Barlow", sans-serif;
     line-height: 1;
@@ -2384,11 +2385,12 @@ hr {
 .slider-area .hero__caption .stock-text h2 {
     font-size: 140px;
     font-weight: 800;
+    font-style: italic;
     margin: 0;
     line-height: 1;
     text-transform: uppercase;
     position: absolute;
-    color: #fff;
+    color: #fff;    
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .slider-area .hero__caption .stock-text h2 {
@@ -2413,13 +2415,13 @@ hr {
 }
 .slider-area .hero__caption .stock-text h2:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 0px #fff;
     -webkit-text-fill-color: transparent;
 }
 .slider-area .hero__caption .stock-text h2:nth-child(2) {
     color: #C00000;
-    -webkit-animation: animate 4s ease-in-out infinite;
-    animation: animate 4s ease-in-out infinite;
+    /* -webkit-animation: animate 4s ease-in-out infinite; */
+    /* animation: animate 4s ease-in-out infinite; */
 }
 @keyframes animate {
     0%,
