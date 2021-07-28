@@ -10,7 +10,7 @@
     <meta name="description"
         content="Compañía dedicada a prestar servicios de obra civil, mecánica, eléctrica, así como servicio a ductos">
     <meta name="keywords"
-        content="Obras, protección, catódica, mantenimiento, vías, correctivo, tuberías, bombas, compresores,motores,turninas, civil,mecánica, eléctrica, ductos, Tabasco, Tabasco, México, industriale, carreteras,remodelación, paneles solares">
+        content="Obras, protección, catódica, mantenimiento, vías, correctivo, tuberías, bombas, compresores,motores,turbinas, civil,mecánica, eléctrica, ductos, Tabasco, Tabasco, México, industriale, carreteras,remodelación, paneles solares">
     <meta name="copyright" content="TRW Ingeniería">
     <meta name="Distribution" content="Global">
     <meta name="Rating" content="General">
@@ -146,7 +146,7 @@
     <section class="contact-section">
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15177.536696645657!2d-92.96642397955948!3d18.007366060077644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd7c1fdc52b57%3A0xaac7cf42f003181!2sLa%20Choca%2C%2086037%20Villahermosa%2C%20Tab.!5e0!3m2!1ses!2smx!4v1621278195435!5m2!1ses!2smx" 
+                <iframe src="https://www.google.com.mx/maps/search/Calle+16%C2%AA,+entre+5%C2%AA+y+7+Fracc.+Campestre+Viladiu/@21.0554235,-89.549783,17z/data=!3m1!4b1" 
                  height="480" style="height: 480px; width: 100%; position: relative; overflow: hidden;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
@@ -267,9 +267,10 @@
                                 <div class="footer-tittle">
                                     <h4>Contacto</h4>
                                     <div class="footer-pera">
-                                        <p class="info1">Fracc. Campestre<br>
-                                            Reforma 218<br>
-                                            C.P 86037</p>
+                                        <p class="info1">Fracc. Campestre Viladiu<br>
+                                            Calle 16ª, entre 5ª y 7<br>
+                                            Cholul, Mérida, Yucatán
+                                            C.P 97305</p>
                                     </div>
                                     <ul>
                                         <li><a href="tel:9932424730"><i class="fa fa-phone"></i> 993-242-4730</a></li>
