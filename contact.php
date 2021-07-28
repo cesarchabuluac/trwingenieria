@@ -146,7 +146,7 @@
     <section class="contact-section">
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">                
-                <iframe src="https://www.google.com.mx/maps/search/Calle+16%C2%AA,+entre+5%C2%AA+y+7+Fracc.+Campestre+Viladiu/@21.0554235,-89.549783,17z/data=!3m1!4b1" 
+                <iframe src="https://www.google.com/maps/place/Residencial+Campestre+Viladiu/@21.056288,-89.5510445,16z/data=!4m9!1m2!2m1!1sFracc.+Campestre+Viladiu+Calle+16%C2%AA,+entre+5%C2%AA+y+7+Cholul,+M%C3%A9rida!3m5!1s0x0:0xae0698071f2cfa09!8m2!3d21.0554185!4d-89.5475943!15sCkJGcmFjYy4gQ2FtcGVzdHJlIFZpbGFkaXUgQ2FsbGUgMTbCqiwgZW50cmUgNcKqIHkgNyBDaG9sdWwsIE3DqXJpZGGSARNob3VzaW5nX2RldmVsb3BtZW50" 
                  height="480" style="height: 480px; width: 100%; position: relative; overflow: hidden;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
@@ -195,10 +195,13 @@
                 <div class="col-lg-3 offset-lg-1">
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
-                        <div class="media-body">
-                            <h3>Fracc. Campestre<br> 
-                                Reforma 218<br>
-                                C.P 86037</h3>                            
+                        <div class="media-body">                            
+                            <h3>
+                                Fracc. Campestre Viladiu<br>
+                                Calle 16ª, entre 5ª y 7<br>
+                                Cholul, Mérida, Yucatán
+                                C.P 97305
+                            </h3>
                         </div>
                     </div>
                     <div class="media contact-info">
