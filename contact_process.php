@@ -5,7 +5,7 @@
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
-    $number = $_REQUEST['number'];
+    // $number = $_REQUEST['number'];
     $cmessage = $_REQUEST['message'];
 
     $headers = "From: $from";
@@ -32,8 +32,5 @@
 	$body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
-
-    $send = mail($to, $subject, $body, $headers);
-    
-
+    mail($to, $subject, $body, $headers);
 ?>
