@@ -14,7 +14,7 @@
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "Información de Contacto";
+    $subject = "Informaci&oacute;n de Contacto";
 
     // $logo = 'img/logo.png';
     // $link = '#';
