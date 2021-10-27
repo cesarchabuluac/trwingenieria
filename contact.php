@@ -146,8 +146,10 @@
     <section class="contact-section">
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">                
-                <iframe src="https://www.google.com/maps/place/Residencial+Campestre+Viladiu/@21.056288,-89.5510445,16z/data=!4m9!1m2!2m1!1sFracc.+Campestre+Viladiu+Calle+16%C2%AA,+entre+5%C2%AA+y+7+Cholul,+M%C3%A9rida!3m5!1s0x0:0xae0698071f2cfa09!8m2!3d21.0554185!4d-89.5475943!15sCkJGcmFjYy4gQ2FtcGVzdHJlIFZpbGFkaXUgQ2FsbGUgMTbCqiwgZW50cmUgNcKqIHkgNyBDaG9sdWwsIE3DqXJpZGGSARNob3VzaW5nX2RldmVsb3BtZW50" 
-                 height="480" style="height: 480px; width: 100%; position: relative; overflow: hidden;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/place/Residencial+Campestre+Viladiu/@21.056288,-89.5510445,16z/data=!4m9!1m2!2m1!1sFracc.+Campestre+Viladiu+Calle+16%C2%AA,+entre+5%C2%AA+y+7+Cholul,+M%C3%A9rida!3m5!1s0x0:0xae0698071f2cfa09!8m2!3d21.0554185!4d-89.5475943!15sCkJGcmFjYy4gQ2FtcGVzdHJlIFZpbGFkaXUgQ2FsbGUgMTbCqiwgZW50cmUgNcKqIHkgNyBDaG9sdWwsIE3DqXJpZGGSARNob3VzaW5nX2RldmVsb3BtZW50" 
+                 height="480" style="height: 480px; width: 100%; position: relative; overflow: hidden;" allowfullscreen="" loading="lazy"></iframe> -->
+
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7446.819636315081!2d-89.5510445!3d21.056288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae0698071f2cfa09!2sResidencial%20Campestre%20Viladiu!5e0!3m2!1ses!2smx!4v1635375865315!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <div class="row">
